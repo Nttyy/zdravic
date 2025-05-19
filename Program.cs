@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ConsoleApp2;
-
-namespace OnlineApp
+﻿namespace ConsoleApp2
 {
     class Program
     {
@@ -13,7 +6,11 @@ namespace OnlineApp
         {
 
             Zdravic zdravic = new Zdravic();
-            zdravic.Pozdrav();
+            zdravic.text = "Ahoj uživateli";
+            Console.WriteLine(zdravic.Pozdrav("Karel"));
+            Console.WriteLine(zdravic.Pozdrav("Petr"));
+            zdravic.text = "Vítám tě tu programátore";
+            Console.WriteLine(zdravic.Pozdrav("Vít"));
             Console.ReadKey();
         }
     }

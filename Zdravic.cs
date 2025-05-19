@@ -1,16 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp2
+﻿namespace ConsoleApp2
 {
+    /// <summary>
+    /// Třída reprezentuje zdravič, který slouží ke zdravení uživatelů
+    /// </summary>
     class Zdravic
     {
-        public void Pozdrav()
+        /// <summary>
+        /// Text pozdravu
+        /// </summary>
+        public string text;
+        /// <summary>
+        /// Pozdraví uživatele textem pozdravu a jeho jménem
+        /// </summary>
+        //// <param name="jmeno">Jméno uživatele</param>
+        /// <returns>Text s pozdravem</returns>
+        public string Pozdrav(string jmeno)
         {
-            Console.WriteLine("Hello object world!");
+            return String.Format("{0},{1}", text, jmeno);
         }
     }
 }
